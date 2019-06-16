@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  influxdb:
+    image: influxdb
+    volumes:
+      - /var/lib/influxdb
+    ports:
+      - 8083:8083 #InfluxDBのWeb UI
+      - 8086:8086 #InfluxDBのHTTP API
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000 #grafanaのポート
+    volumes:
+      - /var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
