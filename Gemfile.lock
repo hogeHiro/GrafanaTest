@@ -1,13 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    colorize (0.8.1)
     influxdb (0.7.0)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
+    unicode-display_width (1.6.0)
+    xcprofiler (0.6.2)
+      colorize
+      terminal-table
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   influxdb
+  xcprofiler
 
 BUNDLED WITH
    2.0.2
