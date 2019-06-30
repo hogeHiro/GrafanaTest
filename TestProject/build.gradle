@@ -33,7 +33,7 @@ buildtimetracker {
         csv {
             output "build/times.csv"
             append true
-            header false
+            header true
         }
 
         summary {
